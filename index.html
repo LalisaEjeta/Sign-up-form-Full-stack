@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('./assets/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_452981.jpg');
+            background-repeat: no-repeat;
+            /* background-size: 100vw; */
+            background-size: cover;
+            /* height: 100vh; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 bg-warning border p-3 border-circle border-rounded">
+                <h2 class="mb-4 text-center fw-bolder">Sign-Up</h2>
+                <form action="http://localhost:2200/sendata" method="post">
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" class="form-control" id="fullName" name="fullname"
+                            placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Gender:</label>
+                        <input type="text" class="form-control" id="gender" name="gender" placeholder="Write your gender">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">City:</label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Country</label>
+                        <input type="text" class="form-control" id="country" name="country" placeholder="Enter your country">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Password:</label>
+                        <input type="text" class="form-control" id="password" name="password" placeholder="Enter password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function handleFormSubmit() {
+            window.location.href = "dashboard.html";
+            return false;
+        }
+    </script>
+</body>
+
+</html>
